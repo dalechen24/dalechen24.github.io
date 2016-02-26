@@ -1,16 +1,20 @@
 var express = require("express"),
 	http = require("http"),
-	path = require("path"),
-	jade = require("jade");
+	path = require("path");
+
 var server = express();
 
 server.set("port", process.env.PORT || 3000);
 server.set("view engine", "jade");
-server.set("views", path.join(__dirname, 'views'));
+server.set("views", __dirname + "/views");
 server.use(express.static(__dirname));
 
 server.get("/", function(req, res) {
 	res.render("index");
+});
+
+server.get("/testSuite", function(req, res) {
+	res.render("testSuite");
 });
 
 server.use(function(req, res, next) {
