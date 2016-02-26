@@ -5,7 +5,7 @@
 		testResultNode.appendChild(
 			document.createTextNode(comment + " is " + boolValue.toString())
 		);
-		document.getElementById("testSuite").appendChild(testResultNode);
+		document.getElementById("testResult").appendChild(testResultNode);
 	};
 	assert(true, "swimming");
 	assert(false, "jumpping");

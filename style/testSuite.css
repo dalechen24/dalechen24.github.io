@@ -1,6 +1,6 @@
-.pass {
+#testResult .pass {
 	color: green;
 }
-.fail {
+#testResult .fail {
 	color: red;
 }

@@ -1,8 +1,11 @@
 doctype html
-html(lang="en")
+html(lang = "en")
 	head
-		meta(charset="utf-8")
+		meta(charset = "utf-8")
 		title myWeb
 	body
 		h1 myWeb 
-		script(src="app.js")
+		ul(id = "urlLinks")
+			li
+				a(href = "./testSuite") testSuite
+		script(src = "app.js")
