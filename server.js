@@ -13,10 +13,6 @@ server.get("/", function(req, res) {
 	res.render("index");
 });
 
-server.get("/testSuite", function(req, res) {
-	res.render("testSuite");
-});
-
 server.use(function(req, res, next) {
 	res.render("pageNotFound");
 });

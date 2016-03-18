@@ -1,11 +1,10 @@
-doctype html
-html(lang = "en")
-	head
-		meta(charset = "utf-8")
-		title myWeb
-	body
-		h1 myWeb 
-		ul(id = "urlLinks")
-			li
-				a(href = "./testSuite") testSuite
-		script(src = "app.js")
+extends ./layouts/layoutMain.jade
+
+block title
+	title homepage of myWeb
+	
+block content
+	h1 myWeb 
+		div(class = "search")
+			input(type = "text" value = "")
+			button 搜索
